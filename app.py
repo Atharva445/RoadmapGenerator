@@ -124,12 +124,12 @@ if st.button("Generate Roadmap"):
             )
 
             # 🎥 YouTube
-            st.write("📺 Top YouTube Tutorials:")
+            st.write("📺 YouTube Tutorials:")
             for vid in get_youtube_videos(skill):
                 st.markdown(f"- [{vid['title']}]({vid['url']})")
 
             # 🎓 Certifications (Dynamic via Google Search)
-            st.write("🎓 Top Certification Links:")
+            st.write("🎓 Certification Links:")
             for cert in get_certifications(skill):
                 st.markdown(f"- [{cert['title']}]({cert['link']})")
 
